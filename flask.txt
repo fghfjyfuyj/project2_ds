@@ -5,3 +5,4 @@ pdfplumber
 playwright
 beautifulsoup4
 openpyxl
+gradio
