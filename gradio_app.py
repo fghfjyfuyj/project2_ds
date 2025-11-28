@@ -1,5 +1,5 @@
 import gradio as gr
-from app import solve_quiz  # your existing function
+from app import solve_quiz  # Import your existing function
 
 iface = gr.Interface(
     fn=solve_quiz,
@@ -11,4 +11,5 @@ iface = gr.Interface(
     outputs=gr.JSON(label="Answer")
 )
 
-iface.launch()
+iface.launch(server_name="0.0.0.0", server_port=7860)
+
